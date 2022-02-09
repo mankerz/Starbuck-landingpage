@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks - Verano</title>
+    <!--    Styles    -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--    Font Aweasome     -->
+    <script src="https://kit.fontawesome.com/95a0379bc1.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img class="logo" src="img/logo.png" alt="Starbucks logo, logo starbucks, stbcks"></a>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Novedades</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text-box">
+                <h2>No solo es café<br>Es <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex molestiae sequi quae asperiores
+                    perspiciatis enim minus voluptatum, doloribus vitae quisquam aut voluptates recusandae dolore
+                    sapiente? Quia accusamus sit quasi dolor. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Necessitatibus quos dolorem aperiam ipsum nemo sapiente numquam reiciendis commodi eligendi, sequi
+                    expedita inventore ipsa, mollitia est deleniti, accusantium aliquid! Odit, atque?</p>
+                <a href="#">Leer Más</a>
+            </div>
+            <div class="image-box">
+                <img src="img/img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img/img1.png" onclick="imgSlider('img/img1.png');changeCircleColor('#0171428c')" width="100px"
+                    alt=""></li>
+            <li><img src="img/img2.png" onclick="imgSlider('img/img2.png');changeCircleColor('#eb74968a')" width="100px"
+                    alt=""></li>
+            <li><img src="img/img3.png" onclick="imgSlider('img/img3.png');changeCircleColor('#d752b175')" width="100px"
+                    alt=""></li>
+        </ul>
+        <ul class="container-social">
+            <li><a href="https://www.instagram.com/starbucksargentina/" target="_bank"><i
+                        class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/StarbucksArgentina" target="_bank"><i
+                        class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com/StarbucksAr" target="_bank"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector(".starbucks").src = anything;
+        }
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
